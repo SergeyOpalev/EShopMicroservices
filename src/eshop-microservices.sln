@@ -1,10 +1,39 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{41CEFAD2-9625-4EBE-A1BA-6B70590D2F1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{F3FCBF5B-5DFF-44B7-B14D-A86DFA310763}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{4A806A4B-7370-4AE8-A30F-FF03B71FD9CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{3CB1FC44-6F5F-4A4A-A296-1122A03768C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{C1D546F9-45C3-45CD-87BD-9399123DCE21}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A806A4B-7370-4AE8-A30F-FF03B71FD9CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A806A4B-7370-4AE8-A30F-FF03B71FD9CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A806A4B-7370-4AE8-A30F-FF03B71FD9CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A806A4B-7370-4AE8-A30F-FF03B71FD9CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D546F9-45C3-45CD-87BD-9399123DCE21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D546F9-45C3-45CD-87BD-9399123DCE21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D546F9-45C3-45CD-87BD-9399123DCE21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D546F9-45C3-45CD-87BD-9399123DCE21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F3FCBF5B-5DFF-44B7-B14D-A86DFA310763} = {41CEFAD2-9625-4EBE-A1BA-6B70590D2F1B}
+		{4A806A4B-7370-4AE8-A30F-FF03B71FD9CC} = {F3FCBF5B-5DFF-44B7-B14D-A86DFA310763}
+		{C1D546F9-45C3-45CD-87BD-9399123DCE21} = {3CB1FC44-6F5F-4A4A-A296-1122A03768C7}
 	EndGlobalSection
 EndGlobal
