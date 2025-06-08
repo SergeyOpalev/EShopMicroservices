@@ -12,8 +12,6 @@ public static class DatabaseExtensions
 
         await context.Database.MigrateAsync();
 
-        //context.Database.MigrateAsync().GetAwaiter().GetResult();
-
         await SeedAsync(context);
     }
 
